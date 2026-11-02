@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>জয়শ্রী মুন্ডপাশা শহীদ আবুল বাশার মেমোরিয়াল মাধ্যমিক বিদ্যালয় | ৫৭ বছর পূর্তি ও পুনর্মিলনী ২০২৬</title>
+  <meta name="description" content="জয়শ্রী মুন্ডপাশা শহীদ আবুল বাশার মেমোরিয়াল মাধ্যমিক বিদ্যালয়ের ৫৭ বছর পূর্তি ও পুনর্মিলনী অনুষ্ঠান ২০২৬ এর আনুষ্ঠানিক অনলাইন রেজিস্ট্রেশন পোর্টাল।">
+  <meta name="keywords" content="JMSABMSS, জয়শ্রী মুন্ডপাশা মাধ্যমিক বিদ্যালয়, শহীদ আবুল বাশার, ৫৭ বছর পূর্তি, পুনর্মিলনী ২০২৬, অনলাইন রেজিস্ট্রেশন">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- পপ-আপ নোটিশ মোডাল -->
+<div class="modal" id="pop" role="dialog" aria-modal="true" hidden>
+  <div class="mbox">
+    <h3>📢 জরুরী নোটিশ</h3>
+    <div>
+      প্রিয় প্রাক্তন ও বর্তমান শিক্ষার্থীবৃন্দ, <b>জয়শ্রী মুন্ডপাশা শহীদ আবুল বাশার মেমোরিয়াল মাধ্যমিক বিদ্যালয়ের ৫৭ বছর পূর্তি ও পুনর্মিলনী অনুষ্ঠান (১৯ ডিসেম্বর ২০২৬)</b> উপলক্ষে আপনার অনলাইন রেজিস্ট্রেশন দ্রুত সম্পন্ন করুন। রেজিস্ট্রেশন ফি: <b>১,০০০ টাকা</b>। নির্ধারিত সময়ের পর আর কোনো নতুন নিবন্ধন গ্রহণ করা হবে না।
+    </div>
+    <button id="popx" type="button">বন্ধ করুন</button>
+    <div style="clear:both;padding:0"></div>
+  </div>
+</div>
+
+<!-- স্টিকি নেভিগেশন বার -->
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-icon">🏫</span>
+      <span class="nav-brand-text">JMSABMSS</span>
+      <span class="nav-brand-badge">৫৭ বছর</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">হোম</a>
+      <a href="register.html">অনলাইন রেজিস্ট্রেশন</a>
+      <a href="registered_list.html">নিবন্ধিত সদস্য তালিকা</a>
+      <a href="download_slip.html">স্লিপ ডাউনলোড</a>
+      <a href="schedule.html">প্রোগ্রাম শিডিউল</a>
+      <a href="messages.html">বাণী ও অনুভূতি</a>
+      <a href="about.html">বিদ্যালয়ের ইতিহাস</a>
+      <a href="contact.html">যোগাযোগ</a>
+    </div>
+    <div class="nav-actions">
+      <button id="theme-btn" class="theme-toggle" type="button" aria-label="থিম পরিবর্তন" title="ডার্ক/লাইট মোড পরিবর্তন">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-text">ডার্ক মোড</span>
+      </button>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-label="মেনু খুলুন">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- হিরো ব্যানার -->
+<header class="hero">
+  <div class="badge">
+    <b>৫৭</b>
+    <span>বছর পূর্তি</span>
+  </div>
+  <h1>জয়শ্রী মুন্ডপাশা শহীদ আবুল বাশার মেমোরিয়াল মাধ্যমিক বিদ্যালয়</h1>
+  <p>ডাকঘর: জয়শ্রী মুন্ডপাশা, স্থাপিত: ১৯৬৯ ইং</p>
+  <p><b>৫৭ বছর পূর্তি উপলক্ষে পুনর্মিলনী অনুষ্ঠান ২০২৬</b></p>
+  <p class="slogan">“শেকড়ের টানে, স্মৃতির সন্ধানে—আবারও মিলি প্রাণের বন্ধনে”</p>
+  
+  <div class="hero-actions">
+    <a class="btn" href="register.html">অনলাইনে রেজিস্ট্রেশন করুন ➔</a>
+    <a class="btn green" href="download_slip.html">📥 রেজিস্ট্রেশন স্লিপ ডাউনলোড</a>
+    <a class="btn alt" href="https://www.facebook.com/profile.php?id=61594578711213" target="_blank" rel="noopener">অফিসিয়াল ফেসবুক পেজ</a>
+  </div>
+</header>
+
+<!-- কাউন্টডাউন টাইমার -->
+<div class="count-wrapper">
+  <div class="count" id="count">
+    <div><b id="d">০</b><small>দিন</small></div>
+    <div><b id="h">০</b><small>ঘণ্টা</small></div>
+    <div><b id="m">০</b><small>মিনিট</small></div>
+    <div><b id="s">০</b><small>সেকেন্ড</small></div>
+  </div>
+  <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:8px">অনুষ্ঠানের বাকি সময় (১৯ ডিসেম্বর ২০২৬)</p>
+</div>
+
+<!-- লাইভ রেজিস্টার্ড ব্যাজ -->
+<div class="live-badge-wrapper">
+  <span class="live-badge">
+    <span class="live-dot" aria-hidden="true"></span>
+    🎉 মোট নিবন্ধিত শিক্ষার্থী: <b id="reg-badge-count" style="color:var(--red);font-size:24px;line-height:1">০</b> জন
+  </span>
+</div>
+
+<!-- মূল কনটেন্ট -->
+<main class="container">
+
+  <!-- গুরুত্বপূর্ণ তথ্য ও ফিচার হাইলাইটস -->
+  <div class="info-banner">
+    <div class="card">
+      অনুষ্ঠানের তারিখ
+      <big>১৯ ডিসেম্বর ২০২৬</big>
+      শনিবার
+    </div>
+    <div class="card">
+      রেজিস্ট্রেশন শুরু
+      <big>৫ নভেম্বর ২০২৬</big>
+      অনলাইন ও অফলাইনে
+    </div>
+    <div class="card">
+      রেজিস্ট্রেশন ফি
+      <big>১,০০০ টাকা</big>
+      প্রাক্তন ও বর্তমান
+    </div>
+    <div class="card" style="border:2px solid var(--gold);background:var(--gold-bg)">
+      মোট রেজিস্ট্রেশন
+      <big id="reg-total-count" style="color:var(--green)">০ জন</big>
+      <small style="color:var(--muted)">লাইভ ডাটা</small>
+    </div>
+  </div>
+
+  <!-- পুনর্মিলনী সম্পর্কে ও আহ্বান -->
+  <section style="margin-bottom: 40px;">
+    <h2 class="section-title">শতবর্ষের দ্বারপ্রান্তে ৫৭ বছরের ঐতিহ্য</h2>
+    <div class="card" style="line-height: 1.9; font-size: 16px;">
+      <p>
+        শ্রদ্ধেয় শিক্ষক-শিক্ষিকাবৃন্দ, প্রিয় প্রাক্তন ও বর্তমান সহপাঠী বন্ধু এবং অনুজ ভাই-বোনেরা—<br>
+        ১৯৬৯ সালের ১ জানুয়ারি মোঃ মোদাচ্ছের হোসেন শিকদার (মান্নু) ও স্থানীয় শিক্ষানুরাগী বিশিষ্টজনদের নিরলস প্রচেষ্টায় প্রতিষ্ঠিত হয়েছিল আমাদের প্রিয় বিদ্যাপীঠ <b>জয়শ্রী মুন্ডপাশা শহীদ আবুল বাশার মেমোরিয়াল মাধ্যমিক বিদ্যালয়</b>। আজ দেখতে দেখতে ৫৭টি গৌরবময় বছর পেরিয়ে এসেছি আমরা। 
+      </p>
+      <p>
+        দীর্ঘদিনের বিচ্ছিন্নতা কাটিয়ে শৈশব ও কৈশোরের স্মৃতিবিজড়িত সেই চেনা আঙিনায় আবারও একত্রিত হওয়ার মহতী উদ্যোগ নেওয়া হয়েছে আগামী <b>১৯ ডিসেম্বর ২০২৬, শনিবার</b>। এই পুনর্মিলনী উৎসবকে সার্থক ও প্রাণবন্ত করে তুলতে আপনাদের সকলের সক্রিয় অংশগ্রহণ ও আন্তরিক উপস্থিতি একান্ত কাম্য।
+      </p>
+      <div style="text-align: center; margin-top: 18px;">
+        <a class="btn" href="register.html">আজই রেজিস্ট্রেশন সম্পন্ন করুন ➔</a>
+        <a class="btn alt" href="about.html">বিদ্যালয় ও নামকরণের ইতিহাস পড়ুন</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- রেজিস্ট্রেশন নির্দেশিকা ও পয়েন্ট -->
+  <section style="margin-bottom: 40px;">
+    <h2 class="section-title">রেজিস্ট্রেশন মাধ্যম ও পয়েন্ট</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>💻 অনলাইনে রেজিস্ট্রেশন</h3>
+        <p>ওয়েবসাইটের অনলাইন রেজিস্ট্রেশন পেজে গিয়ে খুব সহজেই আপনার সকল ব্যক্তিগত তথ্য, ব্যাচ, টি-শার্টের সাইজ ও পেমেন্ট বিবরণ দিয়ে ফর্ম জমা দিন।</p>
+        <a class="tel" href="register.html">অনলাইন ফরম খুলুন</a>
+      </div>
+
+      <div class="card">
+        <h3>🏪 রূপসী বাংলা (অফলাইন)</h3>
+        <p>মোঃ জসিম<br>সরাসরি যোগাযোগ করে অফলাইন রেজিস্ট্রেশন সম্পন্ন করুন এবং রশিদ সংগ্রহ করুন।</p>
+        <a class="tel" href="tel:+8801624822522">📞 01624-822522</a>
+      </div>
+
+      <div class="card">
+        <h3>💊 সিকদার ফার্মেসি (অফলাইন)</h3>
+        <p>মোঃ রামিম শিকদার<br>সরাসরি যোগাযোগ করে ফর্ম পূরণ ও ফি জমা দেওয়া যাবে।</p>
+        <a class="tel" href="tel:+8801924447399">📞 01924-447399</a>
+      </div>
+
+      <div class="card">
+        <h3>📢 অফিসিয়াল আপডেট</h3>
+        <p>পুনর্মিলনীর সকল আনুষ্ঠানিক নোটিশ ও নিয়মিত খবরাখবর পেতে আমাদের ফেসবুক পেজটি ফলো করুন।</p>
+        <a class="tel" href="https://www.facebook.com/profile.php?id=61594578711213" target="_blank" rel="noopener">ফেসবুক পেজ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- দ্রুত নেভিগেশন সেকশন -->
+  <section>
+    <h2 class="section-title">পোর্টালে অন্যান্য পেজসমূহ</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📋 নিবন্ধিত সদস্য তালিকা</h3>
+        <p>আপনার ব্যাচের কতজন বন্ধু ইতিমধ্যে রেজিস্ট্রেশন সম্পন্ন করেছেন তা ব্যাচভিত্তিক ফিল্টার করে দেখে নিন।</p>
+        <a href="registered_list.html" style="color:var(--green);font-weight:700">সদস্যদের তালিকা দেখুন ➔</a>
+      </div>
+      <div class="card">
+        <h3>📥 স্লিপ অনুসন্ধান ও ডাউনলোড</h3>
+        <p>রেজিস্ট্রেশনের পর মোবাইল নম্বর দিয়ে তাৎক্ষণিকভাবে আপনার ভেরিফাইড প্রবেশপত্র / স্লিপ প্রিন্ট করুন।</p>
+        <a href="download_slip.html" style="color:var(--green);font-weight:700">স্লিপ ডাউনলোড করুন ➔</a>
+      </div>
+      <div class="card">
+        <h3>📅 অনুষ্ঠানসূচি (শিডিউল)</h3>
+        <p>১৯ ডিসেম্বর ২০২৬ এর আনন্দ শোভাযাত্রা, স্মৃতিচারণ, সাংস্কৃতিক অনুষ্ঠান ও র‍্যাফেল ড্র এর সময়সূচি।</p>
+        <a href="schedule.html" style="color:var(--green);font-weight:700">পূর্ণাঙ্গ সূচি দেখুন ➔</a>
+      </div>
+      <div class="card">
+        <h3>💬 শিক্ষক ও শিক্ষার্থীদের বাণী</h3>
+        <p>শ্রদ্ধেয় শিক্ষকদের দিকনির্দেশনামূলক বাণী ও প্রাক্তন বন্ধুদের হৃদয়ের স্মৃতিচারণমূলক বার্তা।</p>
+        <a href="messages.html" style="color:var(--green);font-weight:700">বাণী ও স্মৃতিচারণ ➔</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ফুটার -->
+<footer>
+  আয়োজনে: প্রাক্তন ছাত্রছাত্রীবৃন্দ<br>
+  © ২০২৬ জয়শ্রী মুন্ডপাশা শহীদ আবুল বাশার মেমোরিয়াল মাধ্যমিক বিদ্যালয়। সর্বস্বত্ব সংরক্ষিত।
+  <div style="margin-top:10px;font-size:14px;color:#fdfdfd">
+    Developer: <a href="https://www.facebook.com/mdwahiduzzamanmubin/" target="_blank" rel="noopener">Mubin</a>
+  </div>
+</footer>
+
+<!-- ফ্লোটিং বাটনসমূহ -->
+<div class="float-btns">
+  <button id="float-theme-btn" class="float-btn" type="button" aria-label="থিম পরিবর্তন" title="ডার্ক/লাইট মোড পরিবর্তন">
+    <span class="float-theme-icon">🌙</span>
+  </button>
+  <button id="top-btn" class="float-btn top-btn" type="button" aria-label="উপরে যান" title="উপরে যান">
+    ⬆️
+  </button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
